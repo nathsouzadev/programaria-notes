@@ -1,17 +1,27 @@
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono, Space_Grotesk } from 'next/font/google';
+import localFont from 'next/font/local';
 import type { ReactNode } from 'react';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--font-inter' });
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+// Fonts are self-hosted (variable woff2, latin subset) instead of loaded via next/font/google:
+// Turbopack's Google Fonts loader fails intermittently on Vercel (vercel/next.js#99114),
+// and self-hosting also removes the build-time network dependency.
+const inter = localFont({
+  src: './fonts/inter-latin.woff2',
+  weight: '400 600',
+  display: 'swap',
+  variable: '--font-inter',
+});
+const spaceGrotesk = localFont({
+  src: './fonts/space-grotesk-latin.woff2',
+  weight: '400 700',
+  display: 'swap',
   variable: '--font-space-grotesk',
 });
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500'],
+const jetBrainsMono = localFont({
+  src: './fonts/jetbrains-mono-latin.woff2',
+  weight: '400 500',
+  display: 'swap',
   variable: '--font-jetbrains-mono',
 });
 
