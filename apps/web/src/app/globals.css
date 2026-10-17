@@ -1,0 +1,37 @@
+@import '@programaria/ui/tokens.css';
+
+/* next/font exposes the loaded families as CSS variables; map them onto the design tokens. */
+:root {
+  --ds-font-body: var(--font-inter), system-ui, sans-serif;
+  --ds-font-display: var(--font-space-grotesk), sans-serif;
+  --ds-font-mono: var(--font-jetbrains-mono), monospace;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--ds-bg);
+  color: var(--ds-text);
+  font-family: var(--ds-font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--ds-primary);
+}
+a:hover {
+  color: var(--ds-primary-hover);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--ds-selection);
+}

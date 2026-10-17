@@ -1,0 +1,99 @@
+.base {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: var(--ds-radius-pill);
+  font-size: 13px;
+  line-height: 1.2;
+  transition: all var(--ds-motion);
+}
+
+.base:focus-visible {
+  outline: 2px solid var(--ds-accent);
+  outline-offset: 2px;
+}
+
+.primary {
+  background: var(--ds-primary);
+  color: var(--ds-surface);
+  border: none;
+  padding: 8px 18px;
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+}
+.primary:hover,
+.primary:focus-visible {
+  background: var(--ds-primary-hover);
+}
+
+.outline {
+  background: none;
+  border: 1px solid var(--ds-border);
+  color: var(--ds-text-secondary);
+  padding: 8px 16px;
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+}
+.outline:hover,
+.outline:focus-visible {
+  border-color: var(--ds-primary-hover);
+  color: var(--ds-primary);
+}
+
+.ghost {
+  background: none;
+  border: none;
+  color: var(--ds-text-secondary);
+  padding: 8px 12px;
+  font-weight: 500;
+}
+.ghost:hover,
+.ghost:focus-visible {
+  background: var(--ds-bg);
+}
+
+.danger {
+  background: none;
+  border: none;
+  color: var(--ds-danger);
+  padding: 8px 12px;
+  font-weight: 500;
+}
+.danger:hover,
+.danger:focus-visible {
+  background: var(--ds-danger-bg);
+}
+
+.dangerSolid {
+  background: var(--ds-danger);
+  border: none;
+  color: var(--ds-surface);
+  padding: 8px 14px;
+  font-weight: 600;
+}
+.dangerSolid:hover,
+.dangerSolid:focus-visible {
+  background: var(--ds-danger-hover);
+}
+
+.link {
+  background: none;
+  border: none;
+  color: var(--ds-primary);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  border-radius: 4px;
+}
+.link:hover,
+.link:focus-visible {
+  color: var(--ds-primary-hover);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .base {
+    transition: none;
+  }
+}

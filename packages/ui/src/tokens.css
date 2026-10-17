@@ -1,0 +1,32 @@
+/* Design tokens extracted from the Claude Design prototype (.claude/design). */
+:root {
+  --ds-bg: #e8e5f0;
+  --ds-surface: #ffffff;
+  --ds-surface-muted: #f2f2f2;
+  --ds-border: #d9d9d9;
+
+  --ds-text: #1e1e1e;
+  --ds-text-secondary: #4a4756;
+  --ds-text-muted: #6b6776;
+
+  --ds-primary: #604898;
+  --ds-primary-hover: #715eaa;
+  --ds-accent: #4bb9bc;
+  --ds-selection: #c098f9;
+
+  --ds-danger: #c8323a;
+  --ds-danger-hover: #a8262d;
+  --ds-danger-bg: #fbe8ea;
+
+  --ds-shadow-hover: 0 24px 48px -16px rgba(96, 72, 152, 0.18);
+  --ds-shadow-editor: 0 10px 15px -3px rgba(96, 72, 152, 0.14);
+
+  --ds-radius: 8px;
+  --ds-radius-pill: 9999px;
+
+  --ds-font-body: 'Inter', system-ui, sans-serif;
+  --ds-font-display: 'Space Grotesk', sans-serif;
+  --ds-font-mono: 'JetBrains Mono', monospace;
+
+  --ds-motion: 200ms ease;
+}

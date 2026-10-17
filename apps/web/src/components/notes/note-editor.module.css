@@ -1,0 +1,48 @@
+.editor {
+  background: var(--ds-surface);
+  border: 1px solid var(--ds-primary);
+  border-radius: var(--ds-radius);
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--ds-shadow-editor);
+}
+
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 220px;
+  resize: vertical;
+  border: none;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ds-text);
+  background: transparent;
+}
+
+/* focus indicated by the editor container's primary border + shadow */
+.textarea:focus {
+  outline: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hint {
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  color: var(--ds-text-muted);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}

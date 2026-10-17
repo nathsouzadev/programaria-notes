@@ -1,0 +1,11 @@
+.label {
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ds-primary);
+  white-space: nowrap;
+}
+
+.brace {
+  opacity: 0.6;
+}
